@@ -8,6 +8,72 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:823265419171:android:68741c3887e784908fc416",
+        "android_client_info": {
+          "package_name": "com.codewithshreya.baby_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823265419171-oagnuep7dts56rcuq2n4c4rg95n9nad6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codewithshreya.baby_new",
+            "certificate_hash": "a10415aec0de0f30cc4f19b52ff2aaa8a3a12025"
+          }
+        },
+        {
+          "client_id": "823265419171-dvoo0fkk15gec78kigjbi4cn0f2o11ut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgrhTn0sdh1dPXVt5u1FLtI5j2p3R8K8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823265419171-dvoo0fkk15gec78kigjbi4cn0f2o11ut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823265419171:android:1116984c554d20578fc416",
+        "android_client_info": {
+          "package_name": "com.codewithshreya.edux_vplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823265419171-dvoo0fkk15gec78kigjbi4cn0f2o11ut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgrhTn0sdh1dPXVt5u1FLtI5j2p3R8K8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823265419171-dvoo0fkk15gec78kigjbi4cn0f2o11ut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:823265419171:android:7fb9c77cc969776a8fc416",
         "android_client_info": {
           "package_name": "com.codewithshreya.nutritionxx"

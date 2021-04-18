@@ -1,0 +1,45 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:2:1-19:12
+	package
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:3:5-46
+		INJECTED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml
+		INJECTED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:7:5-17:19
+	android:label
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:9:9-41
+	android:allowBackup
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:10:9-50
+activity#com.codewithshreya.video_player.Fullscreen
+ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:11:9-12:86
+	android:configChanges
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:12:13-74
+	android:name
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:11:19-76
+activity#com.codewithshreya.video_player.Show_Video
+ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:13:9-79
+	android:name
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:13:19-76
+activity#com.codewithshreya.video_player.MainActivity
+ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:14:9-80
+	android:name
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml:14:19-78
+uses-sdk
+INJECTED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml
+INJECTED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml
+		ADDED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml
+		INJECTED from /Users/rajat.d/learning/little_miracle/video-player/src/main/AndroidManifest.xml

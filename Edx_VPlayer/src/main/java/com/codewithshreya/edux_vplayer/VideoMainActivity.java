@@ -3,7 +3,6 @@ package com.codewithshreya.edux_vplayer;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContentResolverCompat;
 
 import android.content.ContentResolver;
 import android.content.Intent;
@@ -28,7 +27,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-public class MainActivity extends AppCompatActivity {
+public class VideoMainActivity extends AppCompatActivity {
     private static final int PICK_VIDEO= 1;
     VideoView videoView;
     Button button;
@@ -45,8 +44,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_video);
 
+        Bundle bundle = getIntent().getExtras();
+        if(bundle != null) {
+            if(bundle.getString("some") != null) {
+                Toast.makeText(getApplicationContext(),"data:" + bundle.getString("some"),Toast.LENGTH_SHORT);
+            }
+        }
         member = new Member();
         storageReference = FirebaseStorage.getInstance().getReference("Video");
         databaseReference = FirebaseDatabase.getInstance().getReference("Video");
@@ -93,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
     }
     public void ShowVideo(View view) {
-        Intent intent = new Intent(MainActivity.this, Show_Video.class);
+        Intent intent = new Intent(VideoMainActivity.this, Show_Video.class);
         startActivity(intent);
 
     }
@@ -123,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
                             {
                                 Uri downloadUrl = task.getResult();
                                 progressBar.setVisibility(View.VISIBLE);
-                                Toast.makeText(MainActivity.this, "Data saved", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(VideoMainActivity.this, "Data saved", Toast.LENGTH_SHORT).show();
                                 member.setName(videoName);
                                 member.setVideourl(downloadUrl.toString());
                                 member.setSearch(search);
@@ -132,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                             else
                             {
-                                Toast.makeText(MainActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(VideoMainActivity.this, "Failed", Toast.LENGTH_SHORT).show();
                             }
 
                         }

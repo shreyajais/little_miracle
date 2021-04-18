@@ -1,5 +1,6 @@
 package com.codewithshreya.nutritionxx.Fragment;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,13 +10,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 
-import android.content.ContextWrapper;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.codewithshreya.baby_new.View.RecipeMainActivity;
+import com.codewithshreya.edux_vplayer.VideoMainActivity;
 import com.codewithshreya.nutritionxx.Adapter.PostAdapter;
 import com.codewithshreya.nutritionxx.Adapter.StoryAdapter;
 import com.codewithshreya.nutritionxx.Model.Post;
@@ -44,6 +45,7 @@ public class HomeFragment extends Fragment {
 
     private ImageView btn;
     private ImageView btn1;
+    private Activity context;
 
     private  List<String> followingList;
 
@@ -54,7 +56,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate( R.layout.fragment_home,container,false );
-
+        context = getActivity();
         recyclerView = view.findViewById( R.id.recycle_view );
         recyclerView.setHasFixedSize( true );
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager( getContext() );
@@ -76,30 +78,37 @@ public class HomeFragment extends Fragment {
 
         progressBar = view.findViewById( R.id.progress_circle );
 
-        btn1 = (ImageView)view.findViewById(R.id.video);
+        return view;
+    }
+
+    public void onStart() {
+        super.onStart();
+
+        btn1 = (ImageView)context.findViewById(R.id.video);
         btn1.setOnClickListener(new View.OnClickListener() {
-                                   @Override
-                                   public void onClick(View v) {
-                                       Intent i =getActivity().getPackageManager().getLaunchIntentForPackage("com.codewithshreya.edux_vplayer");
-                                       startActivity(i);
-                                   }
-                               }
+                                    @Override
+                                    public void onClick(View v) {
+                                        Intent i = new Intent(context, VideoMainActivity.class);
+                                        i.putExtra("some","some data");
+//                                       Intent i =getActivity().getPackageManager().getLaunchIntentForPackage("com.codewithshreya.edux_vplayer");
+                                        startActivity(i);
+                                    }
+                                }
         );
 
 
-        btn = (ImageView)view.findViewById(R.id.ic_inbox);
+        btn = (ImageView)context.findViewById(R.id.ic_inbox);
         btn.setOnClickListener(new View.OnClickListener() {
                                    @Override
                                    public void onClick(View v) {
-                                       Intent i =getActivity().getPackageManager().getLaunchIntentForPackage("com.codewithshreya.baby_new");
+                                       Intent i = new Intent(context, RecipeMainActivity.class);
+//                                       Intent i =getActivity().getPackageManager().getLaunchIntentForPackage("com.codewithshreya.baby_new");
                                        startActivity(i);
                                    }
                                }
         );
 
         checkFollowing();
-
-        return view;
     }
 
 

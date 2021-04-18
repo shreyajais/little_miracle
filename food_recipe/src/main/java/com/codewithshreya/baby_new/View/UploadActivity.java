@@ -203,7 +203,7 @@ public class UploadActivity extends AppCompatActivity {
 //        }
     }
     private void openImagesActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, RecipeMainActivity.class);
         startActivity(intent);
     }
 }

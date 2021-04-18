@@ -1,0 +1,24 @@
+com/codewithshreya/video_player/Fullscreen.java
+ com.codewithshreya.video_player.Fullscreen
+ com.codewithshreya.video_player.Fullscreen$1
+com/codewithshreya/video_player/BuildConfig.java
+ com.codewithshreya.video_player.BuildConfig
+com/codewithshreya/video_player/Show_Video.java
+ com.codewithshreya.video_player.Show_Video
+ com.codewithshreya.video_player.Show_Video$1
+ com.codewithshreya.video_player.Show_Video$1$1
+ com.codewithshreya.video_player.Show_Video$2
+ com.codewithshreya.video_player.Show_Video$2$1
+ com.codewithshreya.video_player.Show_Video$3
+com/codewithshreya/video_player/ViewHolder.java
+ com.codewithshreya.video_player.ViewHolder
+ com.codewithshreya.video_player.ViewHolder$1
+ com.codewithshreya.video_player.ViewHolder$2
+ com.codewithshreya.video_player.ViewHolder$Clicklistener
+com/codewithshreya/video_player/Member.java
+ com.codewithshreya.video_player.Member
+com/codewithshreya/video_player/MainActivity.java
+ com.codewithshreya.video_player.MainActivity
+ com.codewithshreya.video_player.MainActivity$1
+ com.codewithshreya.video_player.MainActivity$2
+ com.codewithshreya.video_player.MainActivity$3

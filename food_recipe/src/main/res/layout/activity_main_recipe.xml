@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BBDEFB"
-    tools:context=".View.MainActivity">
+    tools:context=".View.RecipeMainActivity">
 
     <TextView
         android:id="@+id/headerTxt"

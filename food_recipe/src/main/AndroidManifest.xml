@@ -8,17 +8,17 @@
         android:label="@string/app_name"
         android:theme="@style/">
         <activity
-            android:name=".View.MainActivity"
+            android:name=".View.RecipeMainActivity"
             android:label="FirebaseImages ">
         </activity>
         <activity
             android:name=".View.ItemsActivity"
             android:label="List Page "
-            android:parentActivityName=".View.MainActivity" />
+            android:parentActivityName=".View.RecipeMainActivity" />
         <activity
             android:name=".View.UploadActivity"
             android:label="Upload Page "
-            android:parentActivityName=".View.MainActivity" />
+            android:parentActivityName=".View.RecipeMainActivity" />
         <activity
             android:name=".View.DetailsActivity"
             android:label="Details Page "

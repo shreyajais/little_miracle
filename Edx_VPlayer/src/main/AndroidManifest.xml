@@ -11,7 +11,7 @@
         <activity android:name=".Fullscreen"
             android:configChanges="keyboardHidden|orientation|screenSize"></activity>
         <activity android:name=".Show_Video" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".VideoMainActivity"/>
 
 
     </application>

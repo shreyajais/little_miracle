@@ -1,0 +1,4 @@
+include ':Edx_VPlayer'
+include ':food_recipe'
+include ':app'
+rootProject.name = "nutritionxx"

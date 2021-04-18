@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "823265419171",
+    "firebase_url": "https://nutritionxx2-default-rtdb.firebaseio.com",
+    "project_id": "nutritionxx2",
+    "storage_bucket": "nutritionxx2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:823265419171:android:7fb9c77cc969776a8fc416",
+        "android_client_info": {
+          "package_name": "com.codewithshreya.nutritionxx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "823265419171-s29r63i9cqkqp8imt07i2jluh35f1q94.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codewithshreya.nutritionxx",
+            "certificate_hash": "a10415aec0de0f30cc4f19b52ff2aaa8a3a12025"
+          }
+        },
+        {
+          "client_id": "823265419171-dvoo0fkk15gec78kigjbi4cn0f2o11ut.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgrhTn0sdh1dPXVt5u1FLtI5j2p3R8K8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "823265419171-dvoo0fkk15gec78kigjbi4cn0f2o11ut.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
